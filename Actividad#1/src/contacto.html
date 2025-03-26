@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <table width="100%" height="100%">
+        <tr>
+            <td colspan="3">
+                <header>
+                    <h1>Contacto</h1>
+                </header>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="historia.html">Historia</a>
+                    <a href="reglas.html">Reglas</a>
+                    <a href="equipos.html">Equipos</a>
+                    <a href="jugadores.html">Jugadores</a>
+                    <a href="competencias.html">Competiciones</a>
+                    <a href="nba.html">NBA</a>
+                    <a href="tecnicas.html">Técnicas</a>
+                    <a href="femenino.html">Femenino</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <aside>
+                    <h2>Información</h2>
+                    <p>Si tienes alguna pregunta o sugerencia, llena el formulario y te responderemos pronto.</p>
+                </aside>
+            </td>
+            <td width="60%">
+                <main>
+                    <h2>Formulario de Contacto</h2>
+                    <form method="post" enctype="multipart/form-data">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono"><br><br>
+                        
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="10" max="100"><br><br>
+                        
+                        <label for="fecha">Fecha de Contacto:</label>
+                        <input type="date" id="fecha" name="fecha"><br><br>
+                        
+                        <label for="hora">Hora Preferida:</label>
+                        <input type="time" id="hora" name="hora"><br><br>
+                        
+                        <label for="color">Color Favorito:</label>
+                        <input type="color" id="color" name="color"><br><br>
+                        
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select><br><br>
+                        
+                        <label for="comentarios">Comentarios:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea><br><br>
+                        
+                        <label for="archivo">Adjuntar Archivo:</label>
+                        <input type="file" id="archivo" name="archivo"><br><br>
+                        
+                        <label for="url">Página Web:</label>
+                        <input type="url" id="url" name="url"><br><br>
+                        
+                        <label for="acepto">Acepto los términos y condiciones:</label>
+                        <input type="checkbox" id="acepto" name="acepto" required><br><br>
+                        
+                        <label for="notificaciones">Recibir Notificaciones:</label>
+                        <input type="radio" id="si" name="notificaciones" value="si"> Sí
+                        <input type="radio" id="no" name="notificaciones" value="no"> No<br><br>
+                        
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </form>
+                </main>
+            </td>
+            <td width="20%">
+                <aside>
+                    <h2>Redes Sociales</h2>
+                    <p>Encuéntranos en nuestras redes para más información.</p>
+                </aside>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <footer>
+                    <p>&copy; 2025 Mundo del Baloncesto</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

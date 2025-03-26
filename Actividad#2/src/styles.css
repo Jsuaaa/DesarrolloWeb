@@ -1,0 +1,350 @@
+/* Primera Navbar */
+
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.navs{
+    width: 95vw;
+    height: auto;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.links {
+    width: 80%;
+    text-align: justify;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #2A871D;
+    padding: 5px 10px;
+}
+
+.social {
+    width: 20%;
+    text-align: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.social-icon{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-color: #F2F7F4;
+    border-radius: 20%;
+}
+
+/* Espaciado uniforme para los links */
+.links::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/* Segunda Navbar */
+
+/* Imagen alineada a la izquierda */
+.logo {
+    width: 20%;
+    text-align: center;
+}
+
+.logo img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+/* Links alineados uniformemente */
+.nav-links {
+    width: 70%;
+    text-align: justify;
+}
+
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Espaciado uniforme de los enlaces */
+.nav-links::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/* Hero */
+.hero-container {
+    width: 100%;
+}
+
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Icon section */
+
+.icon-section {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.td-iconsection {
+    width: 20%; /* 5 columnas iguales */
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.icon-special{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.number {
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+    color: #8EC552;
+}
+
+.description {
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Video Section */
+
+.video-section {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.video-section-h2 {
+    margin: 10px;
+    font-size: 40px;
+}
+
+.td-video {
+    width: 33.33%; /* Divide en 3 columnas iguales */
+    padding: 10px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* footer */
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.td-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Description section */
+.descripcion-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Oculta todos los textos por defecto */
+.descripcion {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Muestra la descripción cuando el radio button está seleccionado */
+.description-input[type="radio"]:checked + .descripcion {
+    display: block;
+}
+
+.botones label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #F1F2F2;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botones label:hover {
+    background-color: white;
+}
+
+/* Oculta los radio buttons */
+.description-input[type="radio"] {
+    display: none;
+}
+
+/* Academia Seccion */
+
+.oferta-academica {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.oa-h2{
+    background-color: #F1F2F2;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.oa-tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hero2 Section */
+
+.hero2-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hero2-image {
+    background-image: url('/public/Hero2Img.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 550px; /* Ajusta según necesites */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hero2-content {
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.hero2-box {
+    width: 10%;
+    margin: 0px 10px;
+    text-align: center;
+    background: rgba(32, 32, 32, 0.8); /* Fondo semi-transparente */
+}
+
+.hero2-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.hero2-number {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #8BC34A;
+}
+
+.hero2-desc {
+    font-size: 16px;
+    color: white;
+}
+
+/* Admisiones */
+.admisiones-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.admisiones-title {
+    background: #2A871D;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.admisiones-box {
+    width: 33.33%;
+    padding: 20px;
+    vertical-align: top;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+.admisiones-box h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admisiones-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admisiones-box ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
