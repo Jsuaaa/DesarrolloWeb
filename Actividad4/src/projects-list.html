@@ -52,57 +52,11 @@
               <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 text-center">
                 Lista de Proyectos Registrados
               </h3>
-          
-              <table class="w-full divide-y divide-gray-200 dark:divide-gray-700 text-center">
-                <thead class="bg-gray-100 dark:bg-gray-700">
-                  <tr>
-                    <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      ID Proyecto
-                    </th>
-                    <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      Nombre
-                    </th>
-                    <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      Descripción
-                    </th>
-                    <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      Fecha Inicio
-                    </th>
-                    <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      Fecha Final
-                    </th>
-                    <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                      Valor
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                  <tr>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">P001</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">Plataforma Educativa</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">Sistema web para gestión académica</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">2025-03-01</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">2025-07-15</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">$10.000.000</td>
-                  </tr>
-                  <tr>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">P002</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">Control de Inventarios</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">App móvil para tiendas pequeñas</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">2025-04-10</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">2025-08-20</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">$7.200.000</td>
-                  </tr>
-                  <tr>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">P003</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">Sistema IoT Agrícolas</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">Monitoreo ambiental para cultivos</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">2025-05-05</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">2025-09-30</td>
-                    <td class="px-6 py-4 text-sm text-gray-900 dark:text-white">$12.500.000</td>
-                  </tr>
-                </tbody>
-              </table>
+
+                <div id="listaProyectos" class="p-8 space-y-4">
+                  <!-- Aquí se generará dinámicamente la lista -->
+                </div>
+
             </div>
           </div>
           
@@ -133,7 +87,7 @@
     </footer>
     
     
-
+    <script src="project-list.js"></script>
     
 </body>
 </html>

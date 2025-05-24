@@ -82,8 +82,17 @@
                    <input type="number" id="valor" name="valor" class="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
                 </div>
              
+               <div>
+               <label for="participantes" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Participantes
+               </label>
+               <select id="participantes" name="participantes" multiple
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white">
+               </select>
+               </div>
+
                 <div class="flex justify-end">
-                   <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Guardar Proyecto</button>
+                   <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors cursor-pointer">Guardar Proyecto</button>
                 </div>
              </form>             
          </div>
@@ -112,7 +121,8 @@
     </footer>
     
     
-
+    <script src="projects-users.js"></script>
+    <script src="projects.js"></script>
     
 </body>
 </html>
