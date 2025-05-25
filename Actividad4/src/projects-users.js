@@ -10,7 +10,7 @@ participantesSelect.innerHTML = '';
 // Agregar cada usuario como opción
 usuariosGuardados.forEach(usuario => {
     const option = document.createElement('option');
-    option.value = usuario;
+    option.value = usuario.identificacion;
     option.textContent = `${usuario.nombres} ${usuario.apellidos}`;
     participantesSelect.appendChild(option);
 });

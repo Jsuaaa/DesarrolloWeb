@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista-Proyectos</title>
+    <title>Buscar Proyecto</title>
     <link rel="stylesheet" href="output.css">
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </head>
@@ -47,21 +47,18 @@
       <!-- Main Section -->
       <div class="flex flex-1">
          <!-- Main -->
-         <div class="w-full p-8 flex flex-col items-center justify-center">
-            <div class="mt-12 w-full max-w-6xl overflow-x-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 text-center">
-                Lista de Proyectos Registrados
-              </h3>
-
-                <div id="listaProyectos" class="p-8 space-y-4">
-                  <!-- Aquí se generará dinámicamente la lista -->
-                </div>
-
-            </div>
-          </div>
-          
-          
-          
+         <div class="flex-1 p-6">
+            <h2 class="text-2xl font-bold mb-4 dark:text-white text-gray-800">Buscar Proyecto</h2>
+            <input 
+               type="text" 
+               id="buscador" 
+               placeholder="Escribe el nombre del proyecto" 
+               class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+            >
+         
+            <div id="resultados" class="space-y-4"></div>
+         </div>
+         
 
          <!-- Aside -->
          <div class="w-96 dark:bg-gray-900 dark:border-gray-800 border-gray-200 bg-gray-50 flex flex-col justify-between items-center py-12">
@@ -86,8 +83,8 @@
         </div>
     </footer>
     
-    
-    <script src="project-list.js"></script>
+    <script src="buscar-proyecto.js"></script>
+
     
 </body>
 </html>

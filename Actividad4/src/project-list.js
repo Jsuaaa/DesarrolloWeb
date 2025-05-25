@@ -6,6 +6,7 @@ lista.innerHTML = '<p class="text-gray-700 dark:text-white">No hay proyectos aú
 } else {
 proyectos.forEach(p => {
     const div = document.createElement('div');
+
     div.className = 'p-4 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm dark:bg-gray-800 bg-white';
 
     div.innerHTML = `
@@ -14,7 +15,7 @@ proyectos.forEach(p => {
     <p class="text-gray-700 dark:text-gray-300 mb-1"><strong>Descripción:</strong> ${p.descripcion}</p>
     <p class="text-gray-700 dark:text-gray-300 mb-1"><strong>Fecha:</strong> ${p.fechaInicio} - ${p.fechaFinal}</p>
     <p class="text-gray-700 dark:text-gray-300 mb-1"><strong>Valor:</strong> $${p.valor}</p>
-    <p class="text-gray-700 dark:text-gray-300"><strong>Participantes:</strong> ${p.participantes.join(', ')}</p>
+    <p class="text-gray-700 dark:text-gray-300"><strong>Participantes:</strong> ${p.participantes.map(part => `${part.nombres} ${part.apellidos}`).join(', ')}</p>
     `;
     lista.appendChild(div);
 });

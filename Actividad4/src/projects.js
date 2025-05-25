@@ -9,7 +9,13 @@ const descripcion = document.getElementById('descripcion').value;
 const fechaInicio = document.getElementById('fechaInicio').value;
 const fechaFinal = document.getElementById('fechaFinal').value;
 const valor = document.getElementById('valor').value;
-const participantes = document.getElementById('participantes').value.split(',').map(p => p.trim());
+const participantesSelect = document.getElementById('participantes');
+const usuariosGuardados = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+const participantes = Array.from(participantesSelect.selectedOptions).map(opt => {
+    return usuariosGuardados.find(u => u.identificacion === opt.value);
+});
+
 
 const proyecto = {
     id,
