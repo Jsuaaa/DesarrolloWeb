@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
    const buscador = document.getElementById('buscador');
    const resultados = document.getElementById('resultados');
-
+   // Prueba
    const proyectos = JSON.parse(localStorage.getItem('proyectos')) || [];
 
    function mostrarResultados(filtrados) {
